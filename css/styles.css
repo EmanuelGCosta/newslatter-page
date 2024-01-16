@@ -1,0 +1,224 @@
+/* DEFININDO VARIAVEIS */
+
+:root {
+    --color_green: #04D361;
+    --color_blue: #899BFF;
+    --color_red: #FF3E3E;
+    --color_dark: #0C0C0C;
+    --color_dark200: #212529;
+    --color_gray: #AEAEAE;
+    --color_light: #F9F9F9;
+    --color_bg: #1A1A1A;
+}
+
+/* SEÇOES DO HTML */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(252deg, #1A1A1A 0%, #0A0A0A 100%);
+    color: var(--color_light);
+    font-family: Inter, sans-serif;
+
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.header_logo a {
+    text-decoration: none;
+    font-size: 32px;
+    color: var(--color_light);
+}
+
+
+main {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    .section_content {
+        width: 600px;
+        height: auto;
+
+        h2 {
+            margin-top: 50px;
+            font-family: Sora, sans-serif;
+            font-size: 48px;
+            text-align: center;
+        }
+
+        h3 {
+            margin-top: 20px;
+            font-size: 30px;
+            text-align: center;
+            color: var(--color_blue);
+            font-weight: 400;
+        }
+
+        p {
+            margin: 30px 0px 40px 0px;
+            font-size: 24px;
+            line-height: 34px;
+            text-align: center;
+            color: var(--color_gray);
+        }
+    }
+
+    form {
+        width: 600px;
+        height: auto;
+        margin-top: 20px;
+    }
+
+}
+
+/* MODAL */
+
+.modal_enviar {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #0C0C0C90;
+}
+
+.modal_content {
+    width: 800px;
+    height: 300px;
+
+    background-color: var(--color_dark);
+    border: 1px solid var(--color_dark200);
+    border-radius: 4px;
+    color: var(--color_light);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+    /* centralizar no meio da tela */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    p {
+        font-size: 32px;
+        line-height: 42px;
+        margin-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    button {
+      font-size: 24px;
+      font-weight: bold;
+      width: 600px;
+      /* background-color: var(--color_green); */
+    }
+}
+
+/* MODAL ERRO OU SUCESSO */
+
+.sucesso {
+    color: var(--color_green);
+}
+
+.erro {
+    color: var(--color_red);
+}
+
+.bg_sucesso {
+    background-color: var(--color_green);
+}
+
+.bg_erro {
+    background-color: var(--color_red);
+}
+
+/* BOTOES */
+
+.btn {
+    transition: all .5s ease;
+    cursor: pointer;
+    width: 190px;
+    height: 60px;
+    border: 0;
+}
+
+.btn_comprar {
+    background-color: transparent;
+    border: 2px solid var(--color_blue);
+    border-radius: 6px;
+    color: var(--color_light);
+}
+
+.btn_enviar {
+    width: 100%;
+    background-color: var(--color_blue);
+    color: var(--color_dark);
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* HOVER BOTOES */
+
+.btn_comprar:hover {
+    background-color: var(--color_blue);
+}
+
+.btn_enviar:hover {
+    background-color: var(--color_green);
+}
+
+/* FORM INPUT E LABEL */
+
+.inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    input {
+        height: 60px;
+        border-radius: 4px;
+        background-color: var(--color_dark);
+        border: 1px solid var(--color_dark200);
+        color: var(--color_light);
+        padding-left: 8px;
+        font-size: 44px;
+    }
+}
+
+label {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color_gray);
+    padding-left: 2px;
+}
+
+.erro_nome, .erro_email {
+    line-height: 30px;
+}
+
+
+footer {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
