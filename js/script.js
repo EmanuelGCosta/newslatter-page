@@ -72,3 +72,6 @@ document.querySelector('.btn_enviar').addEventListener('click', (e) => {
 btnFechar.addEventListener('click', () => {
     document.querySelector('.modal_enviar').close();
 });
+
+let year = new Date().getFullYear();
+document.querySelector('.year').innerHTML = year; 
