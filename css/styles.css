@@ -338,6 +338,10 @@ footer {
         display: none;
     }
 
+    .section_content {
+        width: 98%;
+    }
+
     body .section_content h2 {
 
         font-size: 20px;
